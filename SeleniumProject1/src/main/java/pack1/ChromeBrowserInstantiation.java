@@ -27,8 +27,10 @@ public class ChromeBrowserInstantiation {
 		
 		//for maximizing window
 		driver.manage().window().maximize();
+		System.out.println("Maximise done");
 		//for minimizing window
 		driver.manage().window().minimize();
+		System.out.println("Minimise done");
 		
 		//for printing source code
 		String sourceCodeString = driver.getPageSource();
@@ -36,16 +38,24 @@ public class ChromeBrowserInstantiation {
 		
 		//to go to previous page by selecting back button
 		driver.navigate().back();
+		System.out.println("Back Navigation done");
 		
 		//to go to next page
 		driver.navigate().forward();
+		System.out.println("Forward navigation done");
 		
 		//for page refresh
 		driver.navigate().refresh();
+		System.out.println("Page refresh done");
+				
+		//close current window
+		//driver.close();
 		
-		//for page closure
+		//close all the browser window and end the WebDriver session.
 		driver.quit();
+		System.out.println("Session ended after closing the instance");
 		
+
 
 		
 	}
