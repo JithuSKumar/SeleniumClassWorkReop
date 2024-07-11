@@ -20,7 +20,21 @@ public class CheckBoxSample {
 		System.out.println("Element visibility: " + checkBoxVisibility);
 		
 		checkBoxElement.click();
-		System.out.println("repeated check: "+ checkBoxElement.isSelected());
+		System.out.println("repeated check after deselction: "+ checkBoxElement.isSelected());
+		
+		System.out.println("\n");
+		
+		WebElement buttonSelectAllElement = driver.findElement(By.id("button-two"));
+		buttonSelectAllElement.click();
+		
+		boolean checkSelection1 = buttonSelectAllElement.isDisplayed();
+		System.out.println("Status of selection: "+ checkSelection1);
+		
+		boolean checkSelectionEnabled = buttonSelectAllElement.isEnabled();
+		System.out.println("Enable selection status: " + checkSelectionEnabled);
+		
+		buttonSelectAllElement.click();
+		System.out.println("deselection check: "+ buttonSelectAllElement.isSelected());
 		
 		driver.close();
 		
