@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class KeyboardMouseActions {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws InterruptedException 
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.tutorialspoint.com/selenium/practice/buttons.php");
@@ -29,12 +29,14 @@ public class KeyboardMouseActions {
 
 		//doubleClick
 		WebElement doubleClickElement = driver.findElement(By.xpath("//button[text()='Double Click Me']"));
-		actionObj.doubleClick(doubleClickElement).perform();
+		actionObj.doubleClick(doubleClickElement).build().perform();
 
 
 		//MouseHovering
-		actionObj.moveToElement(doubleClickElement).perform();
+		actionObj.moveToElement(doubleClickElement).build().perform();
+		Thread.sleep(1000);
 		actionObj.moveToElement(dynamicClikElement).perform();
+		Thread.sleep(1000);
 
 		//Keyboard Events
 
