@@ -23,13 +23,12 @@ public class Assignment4PrintingTableContents {
 		{
 			System.out.print("|" +tableheaderElements.get(i).getText()+ "  |");
 		}
-		System.out.println("\n");
 		//to get the list of elements in the table
-		for (int k=0; k<10; k++)
+		for (int k=0; k<11; k++)
 		{
 		List<WebElement> firstRowDataElements = driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr[" + k + "]//td"));
 		
-		System.out.println();
+		System.out.println("\n");
 
 		for(int j=0; j<firstRowDataElements.size();j++)
 		{
