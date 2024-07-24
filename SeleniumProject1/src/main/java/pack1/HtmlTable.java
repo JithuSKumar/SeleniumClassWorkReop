@@ -1,6 +1,5 @@
 package pack1;
 
-import java.sql.Driver;
 import java.util.List;
 
 import org.openqa.selenium.By;
