@@ -43,7 +43,9 @@ public class HtmlTable {
 		{
 			System.out.print("|" +firstRowDataElements.get(j).getText()+ " |");
 		}
-		
+		//to get all value in table
+		WebElement table=driver.findElement(By.xpath("//table[@id='dtBasicExample']"));
+		System.out.println("\n\n"+table.getText());
 
 		driver.quit();
 	}

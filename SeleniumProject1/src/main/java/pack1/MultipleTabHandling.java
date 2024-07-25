@@ -21,7 +21,7 @@ public class MultipleTabHandling {
 
 		WebElement newTabButton = driver.findElement(By.id("tabButton"));
 		newTabButton.click();
-		Set<String> setNameAllWindows = driver.getWindowHandles();//to get all the windows n current session
+		Set<String> setNameAllWindows = driver.getWindowHandles();//to get all the windows in current session
 
 		for(String childWindow:setNameAllWindows)
 		{

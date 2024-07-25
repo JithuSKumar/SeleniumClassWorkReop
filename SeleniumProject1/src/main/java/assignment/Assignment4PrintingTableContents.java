@@ -20,7 +20,6 @@ public class Assignment4PrintingTableContents {
 		List <WebElement> rowCountElement = driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr"));
 		int count = rowCountElement.size();
 
-		//System.out.println(count);
 
 		List <WebElement> tableheaderElements = driver.findElements(By.xpath("//table[@id='dtBasicExample']//thead//tr//th"));
 
@@ -32,13 +31,17 @@ public class Assignment4PrintingTableContents {
 
 
 
-		for (int k=1; k <count; k++) { List<WebElement> firstRowDataElements = driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr[" + k + "]//td"));
+		for (int k=1; k <count; k++) 
+		{ 
+			List<WebElement> firstRowDataElements = driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr[" + k + "]//td"));
 
 		System.out.println("\n");
 
 		for(int j=0; j<firstRowDataElements.size();j++)
 		{ 
-			System.out.print("|" +firstRowDataElements.get(j).getText() +" |"); } }
+			System.out.print("|" +firstRowDataElements.get(j).getText() +" |"); 
+			} 
+		}
 
 
 
