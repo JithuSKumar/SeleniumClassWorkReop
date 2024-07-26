@@ -30,6 +30,8 @@ public class DynamicTable {
 				break;
 			}
 		}
+		
+		driver.quit();
 	}
 
 }
