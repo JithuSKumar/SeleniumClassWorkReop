@@ -29,38 +29,37 @@ public class FileUpload {
 
 		Actions actionObj = new Actions(driver);
 		actionObj.moveToElement(uploadButtonElement).click().perform();
-		
-		  StringSelection ss = new StringSelection("‪C:\\Users\\USER\\Desktop\\Obsqura\\ExcelFiles\\ExcelRead.xlsx");
-		  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		  
-		  Robot robot = new Robot(); 
-		  robot.delay(250);
-		  robot.keyPress(KeyEvent.VK_CONTROL); 
-		  robot.keyPress(KeyEvent.VK_V);
-		  robot.delay(1000); 
-		  robot.keyRelease(KeyEvent.VK_CONTROL);
-		  robot.keyRelease(KeyEvent.VK_V); 
-		  robot.delay(1000);
-		  robot.keyPress(KeyEvent.VK_ENTER); 
-		  robot.keyRelease(KeyEvent.VK_ENTER);
-		 
+
+		StringSelection ss = new StringSelection("C:\\Users\\USER\\Desktop\\Topics.pdf");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+
+		Robot robot = new Robot(); 
+		robot.delay(2000);
+		robot.keyPress(KeyEvent.VK_CONTROL); 
+		robot.keyPress(KeyEvent.VK_V);
+		robot.delay(2000); 
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V); 
+		robot.delay(2000);
+		robot.keyPress(KeyEvent.VK_ENTER); 
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		robot.delay(2000);
+
+
 		WebElement termsCondtionsElement = driver.findElement(By.id("terms"));
-		//termsCondtionsElement.click();
-		
+		termsCondtionsElement.click();
+
 		WebElement submitButtElement = driver.findElement(By.id("submitbutton"));
-		//submitButtElement.click();
-		
-		
+		submitButtElement.click();
+
+
 		// type 2
-		
-		//actionObj.moveToElement(uploadButtonElement).click().perform();
-		
-		//uploadButtonElement.sendKeys("C:\\Users\\USER\\Desktop\\Obsqura\\ExcelFiles\\ExcelRead.xlsx");
-		//termsCondtionsElement.click();
-		
-		//submitButtElement.click();
-		
-		//driver.quit();
+		uploadButtonElement.sendKeys("C:\\Users\\USER\\Desktop\\Obsqura\\ExcelFiles\\ExcelRead.xlsx");
+		termsCondtionsElement.click();
+
+		submitButtElement.click();
+
+		driver.quit();
 
 	}
 
