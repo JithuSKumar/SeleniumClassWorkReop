@@ -1,0 +1,10 @@
+<suite name = "myTestSuite">
+	<test name ="MyTest">
+		<classes>
+			<class name ="basicTestNG.BasicAnnotation"></class>
+			<class name = "basicTestNG.ScrollTest"></class>
+			<class name = "basicTestNG.AnnotationTest"></class>
+			<!-- --><class name = "basicTestNG.AnnotationTest"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,6 +1,5 @@
 package basicTestNG;
 
-import java.sql.Driver;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
