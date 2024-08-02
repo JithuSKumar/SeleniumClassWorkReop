@@ -8,7 +8,7 @@ public class BasicAnnotation {
 	{
 		System.out.println("Test Case 07");  
 	}
-	@Test
+	@Test(groups = "SmokeTest")
 	public void testCase01()
 	{
 		System.out.println("Test Case 01");  
@@ -28,7 +28,7 @@ public class BasicAnnotation {
 	{
 		System.out.println("Test Case 04");  
 	}
-	@Test
+	@Test(groups = "SmokeTest")
 	public void testCase05()
 	{
 		System.out.println("Test Case 05");  

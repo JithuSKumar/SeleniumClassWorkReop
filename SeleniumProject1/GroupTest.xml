@@ -1,10 +1,16 @@
-<suite name = "myTestSuite">
-	<test name ="MyTest">
+<suite name="myTestSuite">
+	<test name="MyTest">
+		<groups>
+			<run>
+				<!-- <include name="SmokeTest"></include>--><!--to include only that particular method -->
+				<exclude name = "SmokeTest"></exclude>
+			</run>
+		</groups>
 		<classes>
-			<class name ="basicTestNG.BasicAnnotation"></class>
-			<class name = "basicTestNG.ScrollTest"></class>
-			<class name = "basicTestNG.AnnotationTest"></class>
-			<!-- --><class name = "basicTestNG.AnnotationTest"></class>
+			<class name="basicTestNG.BasicAnnotation"></class>
+			<class name="basicTestNG.ScrollTest"></class>
+			<class name="basicTestNG.AnnotationTest"></class>
+			<!-- <class name="basicTestNG.AnnotationTest"></class>-->
 		</classes>
 	</test>
 </suite>

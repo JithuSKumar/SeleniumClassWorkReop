@@ -1,0 +1,9 @@
+<suite name="myTestSuite">
+	<test name="MyTest">
+		<classes>
+			<parameter name ="p1" value ="4"></parameter>
+			<parameter name ="p2" value ="test"></parameter>
+			<class name="basicTestNG.ParameterCheck"></class>
+		</classes>
+	</test>
+</suite>
